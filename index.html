@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Parth Bagai | AI Engineer Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<link
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+<h2>Loading AI Portfolio...</h2>
+
+</div>
+
+<!-- PARTICLES -->
+
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+Parth Bagai
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button id="theme-toggle">
+
+🌙
+
+</button>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-left">
+
+<h1>
+
+Hi, I'm
+
+<span>Parth Bagai</span>
+
+</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p>
+
+Passionate AI & Machine Learning enthusiast with expertise
+in Python, Java, C and C++.
+
+Building intelligent solutions and continuously learning
+emerging technologies.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="assets/resume.pdf" class="btn">
+
+Download Resume
+
+</a>
+
+<a href="#projects" class="btn secondary">
+
+View Projects
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="profile-ring">
+
+<img src="assets/profile.jpg" alt="Parth">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" data-aos="fade-up">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+<div class="glass-card">
+
+<p>
+
+Results-driven technology enthusiast skilled in Python,
+Java, C, and C++, with a strong interest in Artificial
+Intelligence, Machine Learning, NLP, and Software
+Development.
+
+Passionate about building innovative solutions,
+solving real-world challenges, and continuously
+expanding technical expertise.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Skills
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">Java</div>
+<div class="skill-card">C</div>
+<div class="skill-card">C++</div>
+<div class="skill-card">Machine Learning</div>
+<div class="skill-card">NLP</div>
+<div class="skill-card">Git</div>
+<div class="skill-card">GitHub</div>
+<div class="skill-card">DSA</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Projects
+
+</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>AI Resume Parser</h3>
+
+<p>
+Smart resume parsing system using NLP.
+</p>
+
+<a target="_blank"
+href="https://github.com/Parth88900/AI-resume-parser">
+
+GitHub →
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Review Insights</h3>
+
+<p>
+AI powered review analysis platform.
+</p>
+
+<a target="_blank"
+href="https://github.com/Parth88900/Review_Insights2">
+
+GitHub →
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Process Scheduling Simulator</h3>
+
+<p>
+Operating system scheduling visualizer.
+</p>
+
+<a target="_blank"
+href="https://github.com/Parth88900/Process-scheduling-simulator">
+
+GitHub →
+
+</a>
+
+</div>
+
+<div class="project-card featured">
+
+<h3>Agentic RAG System</h3>
+
+<p>
+
+Advanced Retrieval-Augmented Generation
+system powered by AI agents.
+
+</p>
+
+<a target="_blank"
+href="https://github.com/Parth88900/agentic-rag-system">
+
+GitHub →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section id="certificates">
+
+<h2 class="section-title">
+
+Certificates
+
+<div class="certificate-grid">
+
+<div class="certificate-card"
+onclick="openCertificate('assets/tata.jpg')">
+
+<img src="assets/tata.jpg" alt="Tata">
+
+<h3>Tata Cybersecurity Analyst</h3>
+
+</div>
+
+<div class="certificate-card"
+onclick="openCertificate('assets/deloitte.jpg')">
+
+<img src="assets/deloitte.jpg" alt="Deloitte">
+
+<h3>Deloitte Cyber Job Simulation</h3>
+
+</div>
+
+<div class="certificate-card"
+onclick="openCertificate('assets/infosys.jpg')">
+
+<img src="assets/infosys.jpg" alt="Infosys">
+
+<h3>Infosys C++ Programming</h3>
+
+</div>
+
+</div>
+<!-- Popup -->
+
+<div id="certificateModal" class="modal">
+
+<span class="close-modal">&times;</span>
+
+<img id="modalImage">
+
+</div>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact
+
+</h2>
+
+<div class="contact-box">
+
+<p>
+
+📧 bagaiparth9@gmail.com
+
+</p>
+
+<p>
+
+📱 +91 8527209023
+
+</p>
+
+<div class="socials">
+
+<a href="https://github.com/Parth88900">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/parth-bagai-262a4031b">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Parth Bagai
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
